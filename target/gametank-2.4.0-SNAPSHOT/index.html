@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Tank</title>
+        <style>
+            canvas {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background: transparent;
+                /*border: solid black 1px;*/
+
+            }
+            #background {
+                margin-left: 25%;
+                margin-top: 50px;
+                z-index: -2;
+            }
+            #main {
+                margin-left: 25%;
+                margin-top: 50px;
+                z-index: -1;
+            }
+            #ship {
+                margin-left: 25%;
+                margin-top: 50px;
+                z-index: 0;
+            }
+            #tankdich {
+                margin-left: 25%;
+                margin-top: 50px;
+                z-index: 1;
+            }
+            #tankCP1 {
+                margin-left: 25%;
+                margin-top: 50px;
+                z-index: 5;
+            }
+            #tankCP2 {
+                margin-left: 25%;
+                margin-top: 50px;
+                z-index: 6;
+            }
+            #tankCP3 {
+                margin-left: 25%;
+                margin-top: 50px;
+                z-index: 11;
+            }
+            #tankCP4 {
+                margin-left: 25%;
+                margin-top: 50px;
+                z-index: 8;
+            }
+
+            #tankCP5 {
+                margin-left: 25%;
+                margin-top: 50px;
+                z-index: 9;
+            }
+            #tankCP6 {
+                margin-left: 25%;
+                margin-top: 50px;
+                z-index: 10;
+            }
+            #coinAnimation{margin-left: 25%;
+                           margin-top: 50px;
+                           z-index: 2;}
+            #getmouse{margin-left: 25%;
+                      margin-top: 50px;
+                      z-index: 3;}
+            #fire{margin-left: 20%;
+                  border: solid 1px;
+                  margin-top: 58%;
+                  z-index: 4;}
+            </style>
+        </head>
+        <body onload="init()">
+            <div >
+                <!-- The canvas for the panning background -->
+                <canvas id="background" width="600" height="600" style="background: black;">
+                Your browser does not support canvas. Please try again with a different browser.
+            </canvas>
+            <!-- The canvas for all enemy ships and bullets -->
+            <canvas id="main" width="600" height="600">
+            </canvas>
+            <!-- The canvas the ship uses (can only move up
+     one forth the screen.) -->
+            <canvas id="ship" width="600" height="600"></canvas>
+            <canvas id="tankdich" width="600" height="600"></canvas>
+            <canvas id="coinAnimation" width="600" height="600"></canvas>
+            <canvas id="getmouse" width="600" height="600"></canvas>
+            <canvas id="fire" width="50" height="50"></canvas>
+
+            <canvas id="tankCP1" width="600" height="600"></canvas>
+            <canvas id="tankCP2" width="600" height="600"></canvas>
+            <canvas id="tankCP3" width="600" height="600"></canvas>
+            <canvas id="tankCP4" width="600" height="600"></canvas>
+            <canvas id="tankCP5" width="600" height="600"></canvas>
+            <canvas id="tankCP6" width="600" height="600"></canvas>
+
+
+        </div>
+        <div id="mess"></div>
+        <div id="messstatus"></div>
+
+
+        <script src="js/gameProcess.js"></script> 
+        <script src="js/tank_User.js"></script>
+        <script src="js/tankCompetitor1_0.js"></script>
+        <script src="js/tankCompetitor1_1.js"></script>
+        <script src="js/tankCompetitor1_2.js"></script>
+        <script src="js/tankCompetitor1_3.js"></script>
+        <script src="js/effectsCreateTank.js"></script>
+        <!--<script src="js/tanknobum.js"></script>-->
+        
+    </body>
+</html>
